@@ -89,13 +89,13 @@ def sum13(nums):
 
 def sum67(nums):
   total = 0
-  skiptoindex = -1
+  skip_to_index = -1
   for i in range(len(nums)):
-    if nums[i] == 6 and i > skiptoindex:
+    if nums[i] == 6 and i > skip_to_index:
       total += 0
-      skiptoindex = nums[i:].index(7) + i
+      skip_to_index = nums[i:].index(7) + i
     else:
-      if i > skiptoindex:
+      if i > skip_to_index:
         total += nums[i]
       else:
         total += 0
